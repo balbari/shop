@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.login{
+    display: flex;
+    height: 30px;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 16px;
+    gap: 0 8px;
+}
+
+.login div{
+    display: flex;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+.logo h1{
+    width: 100px;
+    height: fit-content;
+}
+.nav{
+    position: relative;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 8px 0;
+}
+.nav .search{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+}
+.contents{
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 24px;
+    padding: 16px;
+}
+
+.item > h4{
+    margin-top: 8px;
+}
+.item .text{
+    display: flex;
+    align-content: center;
+    gap: 18px;
+    margin: 12px 0;
+}
+.item .text > p:last-child{
+    color: #f00;
+}
+.item > ul{
+    display: flex;
+    gap: 18px;
+}
+.item .box img{
+    transition: 0.3s;
+}
+.item .box :hover img{
+    scale: 1.05 1.05;
+}
+.idpw{
+    max-width: 700px;
+    margin: 10rem auto;
+    padding: 40px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.idpw .id,
+.idpw .pw{
+    display: flex;
+    gap: 18px;
+}
+
+.idpw button{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 12px;
+}
+
+@media screen and (max-width:1200px) {
+.contents{
+    grid-template-columns: repeat(2, 1fr);
+}
+.contents h3{
+    font-size: 1.3rem;
+}
+}
